@@ -1,0 +1,17 @@
+.queueOperations{
+    visibility: visible;
+}
+
+.anime{
+    animation: boxAnime 2s ease-in;
+    transition: 500ms;
+}
+@keyframes boxAnime {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+

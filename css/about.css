@@ -1,0 +1,88 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card{
+    background-color: azure;
+    color: black;
+    width: 15rem;
+    border-radius: 5px;
+    align-items: center;
+    word-wrap: break-word;
+    margin-bottom: 5rem;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+.card:hover,.expertDiv>img:hover{
+    box-shadow: 5px 5px 10000px 5px rgb(255, 255, 255);
+    transform: scale(1.05);
+    transition: 1s;
+    border-radius: 10px;
+    opacity: 1;
+
+}
+.cardImg>img{
+    border-radius: 5px;
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+}
+.contri{
+    font-weight: bold;
+    text-align: center;
+}
+
+.expertDiv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(131, 96, 195,0.5), rgb(46, 191, 145,0.5)), url("../images/Sierra_Nevada-landscape-nature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.expertDiv>img{
+    transition: 0.3s;
+    margin: 1rem auto 0.5rem auto;
+    height: 60vh;
+}
+.expertDiv>.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+}
+.projectFaculty{
+    flex-direction: row;
+    display: inline-flex;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(131, 96, 195,0.5), rgb(46, 191, 145,0.5)), url("../images/Sierra_Nevada-landscape-nature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.projectFaculty>.leftHalf>.info,
+.projectFaculty>.rightHalf>.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.projectFaculty>.rightHalf>img,.projectFaculty>.leftHalf>img{
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    width: 80%;
+}
+
+.teamMember{
+    padding: 5rem;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(131, 96, 195,0.5), rgb(46, 191, 145,0.5)), url("../images/Sierra_Nevada-landscape-nature.jpg");
+    background-position: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
